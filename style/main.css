@@ -791,6 +791,64 @@ header .container .main-nav {
   color: white;
 }
 
+/*  end featuers in css  */
+
+/*  start testimonals */
+
+.testimonals {
+  background-color: var(--background-color);
+  padding-top: var(--padding-top-bottom);
+  padding-bottom: var(--padding-top-bottom);
+}
+
+.testimonals .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding-top: var(--padding-top-bottom);
+}
+
+.testimonals .container .emp-card {
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.testimonals .container .emp-card .avatar {
+  position: absolute;
+  top: -30%;
+  right: -1%;
+}
+
+.testimonals .emp-card .avatar img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 9px solid var(--background-color);
+}
+
+.testimonals .emp-card .des-emp p {
+  color: #777;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.testimonals .emp-card .des-emp h2 {
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.testimonals .emp-card .rate .checked {
+  color: gold;
+}
+
+/*  end testimonals */
+
+/* start team membert */
+
 /*  animation in site */
 
 @keyframes bouncing {
