@@ -817,7 +817,7 @@ header .container .main-nav {
 
 .testimonals .container .emp-card .avatar {
   position: absolute;
-  top: -30%;
+  top: -10%;
   right: -1%;
 }
 
@@ -848,6 +848,114 @@ header .container .main-nav {
 /*  end testimonals */
 
 /* start team membert */
+
+.team {
+  padding-top: var(--padding-top-bottom);
+  padding-bottom: var(--padding-top-bottom);
+}
+
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding-top: var(--padding-top-bottom);
+}
+
+.team .container .team-card {
+  position: relative;
+  padding: 15px;
+}
+
+.team .container .team-card:hover .im-team img {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.team .container .team-card::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 100%;
+  background-color: #ddd;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 10px;
+  /*"to left"/"to right"-affectsinitialcolor*/
+  background: linear-gradient(to left, #ddd, #777) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.team .container .team-card:hover::after {
+  background-position: left;
+}
+
+.team .im-team {
+  display: flex;
+  margin-top: 50px;
+}
+
+.team .im-team img {
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  filter: grayscale(1);
+  max-width: 100%;
+  transition: filter var(--transtions) ease-in-out;
+}
+
+.social-media {
+  margin: auto 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.social-media a i {
+  font-size: 20px;
+  color: #777;
+}
+
+.social-media a i:hover {
+  color: var(--main-color);
+}
+
+.team .team-card .text {
+  margin: 10px 0;
+  padding: 10px 0 10px 75px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.team .team-card .text h3 {
+  color: var(--main-color);
+}
+
+.team .team-card .text p {
+  letter-spacing: -1.4px;
+}
+
+/* .social-media a.facebook {
+  background-color: #3b5998;
+}
+
+.social-media a.twitter {
+  background-color: #00aced;
+}
+
+.social-media a.instagram {
+  background-color: #d60027;
+}
+
+.social-media a.linkedin {
+  background-color: #0077b5;
+} */
+
+/*  end team members */
 
 /*  animation in site */
 
